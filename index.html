@@ -1,35 +1,48 @@
 <!doctype html>
 <html lang="cs">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Woodmark s.r.o. | Webová stránka</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Moderní firemní prezentace" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="EBOF" />
+  <meta property="og:description" content="Moderní webová prezentace firmy" />
+  <title>EBOF</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <span class="badge">Výroba a práce se dřevem</span>
-    <section class="hero">
-      <h1>Woodmark s.r.o.</h1>
-      <p>Firma zaměřená na dřevozpracující segment a zakázkovou výrobu.</p>
-      <div class="grid">
-        <article class="card">
-          <h3>Co děláme</h3>
-          <ul><li>Zakázková výroba</li><li>Konzultace projektu</li><li>Dodávka a realizace</li></ul>
-        </article>
-        <article class="card">
-          <h3>Proč si nás vybrat</h3>
-          <ul>
-            <li>Lokální dostupnost v regionu Bučovice</li>
-            <li>Rychlá komunikace a individuální přístup</li>
-            <li>Důraz na kvalitu a dlouhodobou spolupráci</li>
-          </ul>
-        </article>
+  <div class="bg"></div>
+  <main class="wrap">
+    <section class="hero reveal">
+      <span class="pill" data-tag></span>
+      <h1 data-name></h1>
+      <p data-about></p>
+      <div class="actions">
+        <a data-cta class="btn" target="_blank" rel="noopener">Zjistit více</a>
       </div>
-      <a class='cta' href='https://www.firmy.cz/detail/13145319-woodmark-s-r-o-bucovice.html' target='_blank' rel='noopener'>Přejít na současný web</a>
-      <div class="note">Tato stránka je připravený návrh (landing page), který lze rozšířit o reference, ceník, kontaktní formulář a SEO sekce.</div>
     </section>
-    <footer>Vytvořeno pro prezentaci firmy • EBOF web draft</footer>
-  </div>
+
+    <section class="grid">
+      <article class="card reveal">
+        <h2>Služby</h2>
+        <ul data-services class="services"></ul>
+      </article>
+      <article class="card reveal">
+        <h2>Proč tahle firma</h2>
+        <ul class="bullets">
+          <li>Silná lokální přítomnost v Bučovicích</li>
+          <li>Rychlá komunikace a individuální přístup</li>
+          <li>Důraz na kvalitu i dlouhodobou spolupráci</li>
+        </ul>
+      </article>
+    </section>
+
+    <footer>Modern TS web draft • EBOF</footer>
+  </main>
+  <script>window.COMPANY={"name":"Woodmark s.r.o.","tag":"Výroba a práce se dřevem","about":"Firma zaměřená na dřevozpracující segment a zakázkovou výrobu.","services":["Zakázková výroba","Konzultace projektu","Dodávka a realizace"],"cta":"Profil firmy","website":"https://www.firmy.cz/detail/13145319-woodmark-s-r-o-bucovice.html"};</script>
+  <script type="module" src="./app.js"></script>
 </body>
 </html>
