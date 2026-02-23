@@ -3,46 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Moderní firemní prezentace" />
+  <meta name="description" content="Moderní landing page firemní prezentace" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="EBOF" />
+  <meta property="og:title" content="Landing page" />
   <meta property="og:description" content="Moderní webová prezentace firmy" />
-  <title>EBOF</title>
+  <title>Landing page</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div class="bg"></div>
-  <main class="wrap">
-    <section class="hero reveal">
-      <span class="pill" data-tag></span>
+  <div class="noise"></div>
+  <header class="topbar">
+    <div class="container nav">
+      <strong data-name></strong>
+      <a data-cta class="btn ghost" target="_blank" rel="noopener">Web</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container reveal">
+      <span class="chip" data-tag></span>
       <h1 data-name></h1>
       <p data-about></p>
-      <div class="actions">
+      <div class="hero-cta">
         <a data-cta class="btn" target="_blank" rel="noopener">Zjistit více</a>
+      </div>
+      <div class="stats">
+        <article><strong>Lokální</strong><span data-city></span></article>
+        <article><strong>Rychlá reakce</strong><span>Do 24 hodin</span></article>
+        <article><strong>Individuální přístup</strong><span>Řešení na míru</span></article>
       </div>
     </section>
 
-    <section class="grid">
-      <article class="card reveal">
-        <h2>Služby</h2>
+    <section class="container grid">
+      <article class="panel reveal">
+        <h2>Co nabízíme</h2>
         <ul data-services class="services"></ul>
       </article>
-      <article class="card reveal">
-        <h2>Proč tahle firma</h2>
-        <ul class="bullets">
-          <li>Silná lokální přítomnost v Bučovicích</li>
-          <li>Rychlá komunikace a individuální přístup</li>
-          <li>Důraz na kvalitu i dlouhodobou spolupráci</li>
-        </ul>
+      <article class="panel reveal">
+        <h2 data-benefit-title></h2>
+        <p data-benefit-text></p>
+        <div class="quote">„Kvalitní služba začíná pochopením reálných potřeb zákazníka.“</div>
       </article>
     </section>
 
-    <footer>Modern TS web draft • EBOF</footer>
+    <section class="container cta-block reveal">
+      <h2>Hledáte spolehlivého partnera v regionu?</h2>
+      <p>Domluvte si nezávaznou konzultaci a zjistěte, jak vám můžeme pomoct.</p>
+      <a data-cta class="btn" target="_blank" rel="noopener">Kontaktovat</a>
+    </section>
   </main>
-  <script>window.COMPANY={"name":"Woodmark s.r.o.","tag":"Výroba a práce se dřevem","about":"Firma zaměřená na dřevozpracující segment a zakázkovou výrobu.","services":["Zakázková výroba","Konzultace projektu","Dodávka a realizace"],"cta":"Profil firmy","website":"https://www.firmy.cz/detail/13145319-woodmark-s-r-o-bucovice.html"};</script>
+
+  <footer class="container footer">© <span data-year></span> <span data-name></span> • Modern landing draft</footer>
+
+  <script>window.COMPANY={"name":"Woodmark s.r.o.","tag":"Výroba a práce se dřevem","about":"Firma zaměřená na dřevozpracující segment a zakázkovou výrobu.","services":["Zakázková výroba","Konzultace projektu","Dodávka a realizace"],"cta":"Otevřít profil firmy","website":"https://www.firmy.cz/detail/13145319-woodmark-s-r-o-bucovice.html","city":"Bučovice","benefitTitle":"Poctivé řemeslo v moderním podání","benefitText":"Zakázkové zpracování dřeva s důrazem na detail, kvalitu materiálu a dlouhou životnost."};</script>
   <script type="module" src="./app.js"></script>
 </body>
 </html>
